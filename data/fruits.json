@@ -1,0 +1,56 @@
+[
+  {
+    "name":"apple",
+    "title":"Apple",
+    "category":"fruits",
+    "price":2.5,
+    "description":"The apple is a round fruit with smooth skin that comes in various colors like green, yellow, and red. It's known for its crisp texture and can be sweet or tart. Apples are commonly eaten fresh or used in cooking and baking. They're rich in fiber and vitamin C, promoting heart health and aiding digestion.&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"images/fruits/apple.png",
+    "largeImage":"images/fruits/appleB.png"
+  },
+  {
+    "name":"banana",
+    "title":"Banana",
+    "category":"fruits",
+    "price":1.20,
+    "description":"A banana is a long, curved fruit with thick peel, green when unripe and yellow when ripe. Sweet and creamy. Rich in potassium, vitamin C, and vitamin B6. Eaten fresh or added to smoothies, desserts, and cereals.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"images/fruits/banana.png",
+    "largeImage":"images/fruits/bananaB.png"
+  },
+  {
+    "name":"strawberry",
+    "title":"Strawberry",
+    "category":"fruits",
+    "price":4.50,
+    "description":"&lt;div&gt;Perhaps the equivalent to that comfort blanket you had years ago is a cozy fleece. This full-zip is the perfect layering piece for those 'in-between' months when mother nature just can't make up her mind.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;",
+    "image":"images/fruits/strawberry.png",
+    "largeImage":"images/fruits/strawberryB.png"
+  },
+  {
+    "name":"water_apple",
+    "title":"Water Apple",
+    "category":"fruits",
+    "price":2.25,
+    "description":"Syzygium malaccense is a species of tree belonging to the Myrtaceae family. The fruit has a scent very similar to that of a rose, with a watery texture and a slightly sweet taste.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"images/fruits/water_apple.png",
+    "largeImage":"images/fruits/water_appleB.png"
+  },
+  {
+    "name":"papaya",
+    "title":"Papaya",
+    "category":"fruits",
+    "price":1.00,
+    "description":"The papaya is a tropical fruit with a smooth, greenish-yellow skin when unripe, turning orange when ripe. Its flesh is orange or pink, with black seeds in the center. Papayas have a sweet, musky flavor and are rich in vitamins A and C, as well as digestive enzymes. They are commonly eaten fresh, added to fruit salads, or blended into smoothies.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"images/fruits/papaya.png",
+    "largeImage":"images/fruits/papayaB.png"
+  },
+  {
+    "name":"mango",
+    "title":"Mango",
+    "category":"fruits",
+    "price":1.00,
+    "description":"The mango is a tropical fruit with a smooth, thin skin that ranges in color from green to yellow to red when ripe, depending on the variety. Its flesh is juicy and sweet, with a rich, tropical flavor. Mangoes are typically eaten fresh, either sliced or cubed, and can also be used in smoothies, salads, salsas, and desserts. They are rich in vitamins A and C, as well as fiber.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "image":"images/fruits/mango.png",
+    "largeImage":"images/fruits/mangoB.png"
+  }
+]

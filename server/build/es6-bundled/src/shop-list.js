@@ -38,7 +38,7 @@ define(["./shop-app.js"],function(_shopApp){"use strict";class ShopListItem exte
     <shop-image src="[[item.image]]" alt="[[item.title]]"></shop-image>
     <div class="title">[[item.title]]</div>
     <span class="price">[[_formatPrice(item.price)]]</span>
-`}static get is(){return"shop-list-item"}static get properties(){return{item:Object}}_formatPrice(price){return price?"$"+price.toFixed(2):""}}customElements.define(ShopListItem.is,ShopListItem);class ShopList extends _shopApp.PolymerElement{static get template(){return _shopApp.html`
+`}static get is(){return"shop-list-item"}static get properties(){return{item:Object}}_formatPrice(price){return price?"₡"+price.toFixed(0):""}}customElements.define(ShopListItem.is,ShopListItem);class ShopList extends _shopApp.PolymerElement{static get template(){return _shopApp.html`
     <style include="shop-common-styles">
 
       .hero-image {

@@ -256,7 +256,7 @@ class ShopApp extends PolymerElement {
             </a>
           </div>
           <div class="title-site">
-            <a href="/" aria-label="SHOP Home">FRUIT SHOP</a>
+            <a href="/" aria-label="SHOP Home">SOFTWARE LICENSE PROS</a>
           </div>
         </div>
         <div class="cart-btn-container">
@@ -318,7 +318,7 @@ class ShopApp extends PolymerElement {
 
     <footer>
       <a href="#">Costa Rica</a>
-      <div class="demo-label">INGLES 3</div>
+      <div class="demo-label">SOFTWARE LICENSE PROS</div>
     </footer>
 
     <!-- a11y announcer -->

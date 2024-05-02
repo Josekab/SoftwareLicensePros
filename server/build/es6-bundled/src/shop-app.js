@@ -7918,7 +7918,7 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
           </a>
           <h2>[[item.title]]</h2>
           <shop-button>
-            <a aria-label\$="[[item.title]] Shop Now" href\$="/list/[[item.name]]">Shop Now</a>
+            <a aria-label\$="[[item.title]] Shop Now" href\$="/list/[[item.name]]">Comprar ahora</a>
           </shop-button>
         </div>
       </template>
@@ -8209,7 +8209,7 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
 
     <footer>
       <a href="#">Costa Rica</a>
-      <div class="demo-label">INGLES 3</div>
+      <div class="demo-label">SOFTWARE LICENSE PROS</div>
     </footer>
 
     <!-- a11y announcer -->

@@ -147,7 +147,7 @@ class ShopDetail extends PolymerElement {
         <div class="price">[[_formatPrice(item.price)]]</div>
         <div class="pickers">
           <shop-select>
-            <label id="quantityLabel" prefix>Weight</label>
+            <label id="quantityLabel" prefix>Cantidad:</label>
             <select id="quantitySelect" aria-labelledby="quantityLabel">
               <option value="1" selected>1</option>
               <option value="2">2</option>
@@ -168,11 +168,11 @@ class ShopDetail extends PolymerElement {
           </shop-select>
         </div>
         <div class="description">
-          <h2>Description</h2>
+          <h2>Descripción</h2>
           <p id="desc"></p>
         </div>
         <shop-button responsive>
-          <button on-click="_addToCart" aria-label="Add this item to cart">Add to Cart</button>
+          <button on-click="_addToCart" aria-label="Add this item to cart">Añadir al carrito</button>
         </shop-button>
       </div>
     </div>
@@ -248,7 +248,7 @@ class ShopDetail extends PolymerElement {
   }
 
   _formatPrice(price) {
-    return price ? '$' + price.toFixed(2) : '';
+    return price ? '₡' + price.toFixed(0) : '';
   }
 
   _addToCart() {

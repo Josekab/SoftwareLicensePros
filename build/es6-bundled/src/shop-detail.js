@@ -161,11 +161,11 @@ define(["./shop-app.js"],function(_shopApp){"use strict";class ShopDetail extend
           </shop-select>
         </div>
         <div class="description">
-          <h2>Description</h2>
+          <h2>Descripción</h2>
           <p id="desc"></p>
         </div>
         <shop-button responsive>
-          <button on-click="_addToCart" aria-label="Add this item to cart">Add to Cart</button>
+          <button on-click="_addToCart" aria-label="Add this item to cart">Añadir al carrito</button>
         </shop-button>
       </div>
     </div>
@@ -181,5 +181,5 @@ define(["./shop-app.js"],function(_shopApp){"use strict";class ShopDetail extend
     `}static get is(){return"shop-detail"}static get properties(){return{item:Object,route:Object,routeData:Object,visible:{type:Boolean,value:!1},offline:{type:Boolean,observer:"_offlineChanged"},failure:Boolean}}static get observers(){return["_itemChanged(item, visible)"]}_itemChanged(item,visible){if(visible){this._itemChangeDebouncer=_shopApp.Debouncer.debounce(this._itemChangeDebouncer,_shopApp.microTask,()=>{// The item description contains escaped HTML (e.g. "&lt;br&gt;"), so we need to
 // unescape it ("<br>") and set it as innerHTML.
 let text=item?item.description:"";this.$.desc.innerHTML=this._unescapeText(text);// Reset the select menus.
-this.$.quantitySelect.value="1";this.$.sizeSelect.value="M";this.dispatchEvent(new CustomEvent("change-section",{bubbles:!0,composed:!0,detail:{category:item?item.category:"",title:item?item.title:"",description:item?item.description.substring(0,100):"",image:item?this.baseURI+item.image:""}}))})}}_unescapeText(text){let elem=document.createElement("textarea");elem.innerHTML=text;return elem.textContent}_formatPrice(price){return price?"$"+price.toFixed(2):""}_addToCart(){// This event will be handled by shop-app.
+this.$.quantitySelect.value="1";this.$.sizeSelect.value="M";this.dispatchEvent(new CustomEvent("change-section",{bubbles:!0,composed:!0,detail:{category:item?item.category:"",title:item?item.title:"",description:item?item.description.substring(0,100):"",image:item?this.baseURI+item.image:""}}))})}}_unescapeText(text){let elem=document.createElement("textarea");elem.innerHTML=text;return elem.textContent}_formatPrice(price){return price?"₡"+price.toFixed(0):""}_addToCart(){// This event will be handled by shop-app.
 this.dispatchEvent(new CustomEvent("add-cart-item",{bubbles:!0,composed:!0,detail:{item:this.item,quantity:parseInt(this.$.quantitySelect.value,10),size:this.$.sizeSelect.value}}))}_isDefined(item){return null!=item}_tryReconnect(){this.$.categoryData.refresh()}_offlineChanged(offline){if(!offline){this._tryReconnect()}}}customElements.define(ShopDetail.is,ShopDetail)});

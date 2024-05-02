@@ -38,7 +38,7 @@ import{PolymerElement,html,Debouncer,microTask}from"./shop-app.js";class ShopLis
     <shop-image src="[[item.image]]" alt="[[item.title]]"></shop-image>
     <div class="title">[[item.title]]</div>
     <span class="price">[[_formatPrice(item.price)]]</span>
-`}static get is(){return"shop-list-item"}static get properties(){return{item:Object}}_formatPrice(price){return price?"$"+price.toFixed(2):""}}customElements.define(ShopListItem.is,ShopListItem);class ShopList extends PolymerElement{static get template(){return html`
+`}static get is(){return"shop-list-item"}static get properties(){return{item:Object}}_formatPrice(price){return price?"₡"+price.toFixed(0):""}}customElements.define(ShopListItem.is,ShopListItem);class ShopList extends PolymerElement{static get template(){return html`
     <style include="shop-common-styles">
 
       .hero-image {

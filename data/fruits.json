@@ -1,55 +1,55 @@
 [
   {
-    "name":"apple",
-    "title":"Apple",
+    "name":"windows_10_pro",
+    "title":"Windows 10 Pro",
     "category":"fruits",
-    "price":2.5,
-    "description":"The apple is a round fruit with smooth skin that comes in various colors like green, yellow, and red. It's known for its crisp texture and can be sweet or tart. Apples are commonly eaten fresh or used in cooking and baking. They're rich in fiber and vitamin C, promoting heart health and aiding digestion.&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "price":13000,
+    "description":"¡Experimenta la potencia de Windows 10 Pro! Diseñado para satisfacer tanto las necesidades de usuarios domésticos como empresariales, este sistema operativo ofrece una experiencia informática fluida y segura. Con características avanzadas como BitLocker y la capacidad de unirse a dominios empresariales, garantiza la protección y la integración perfecta en entornos laborales. Su interfaz intuitiva y personalizable, junto con funciones como el modo oscuro y los escritorios virtuales, se adaptan a tus preferencias individuales. Ya sea que estés trabajando desde casa o en la oficina, Windows 10 Pro te proporciona la flexibilidad y el rendimiento necesarios para alcanzar tus objetivos. ¡Hazte con Windows 10 Pro hoy mismo y lleva tu experiencia informática al siguiente nivel!",
     "image":"images/fruits/apple.png",
     "largeImage":"images/fruits/appleB.png"
   },
   {
     "name":"banana",
-    "title":"Banana",
+    "title":"Windows 11 Home",
     "category":"fruits",
-    "price":1.20,
-    "description":"A banana is a long, curved fruit with thick peel, green when unripe and yellow when ripe. Sweet and creamy. Rich in potassium, vitamin C, and vitamin B6. Eaten fresh or added to smoothies, desserts, and cereals.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "price":15000,
+    "description":"¡Descubre la innovación de Windows 11 Home! Diseñado para brindar una experiencia moderna y fluida, este sistema operativo ofrece características avanzadas para usuarios domésticos. Con su nuevo diseño centrado en la productividad y la creatividad, Windows 11 Home te ofrece una interfaz intuitiva y personalizable que se adapta a tus necesidades. Disfruta de características como Snap Layouts y Snap Groups, que facilitan la organización de tus aplicaciones y ventanas abiertas. Además, con la integración mejorada de Microsoft Teams, puedes mantenerte conectado con amigos y familiares de manera más sencilla. Con Windows 11 Home, lleva tu experiencia informática a nuevas alturas y disfruta de un rendimiento excepcional en cada tarea. ¡Hazte con Windows 11 Home hoy mismo y descubre todo lo que puede hacer por ti!",
     "image":"images/fruits/banana.png",
     "largeImage":"images/fruits/bananaB.png"
   },
   {
     "name":"strawberry",
-    "title":"Strawberry",
+    "title":"Windows 11 Pro",
     "category":"fruits",
-    "price":4.50,
-    "description":"&lt;div&gt;Perhaps the equivalent to that comfort blanket you had years ago is a cozy fleece. This full-zip is the perfect layering piece for those 'in-between' months when mother nature just can't make up her mind.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;",
+    "price":17000,
+    "description":"¡Explora la excelencia de Windows 11 Pro! Este sistema operativo ofrece un conjunto completo de herramientas diseñadas para satisfacer las necesidades de los usuarios más exigentes, ya sean profesionales o empresas. Con características avanzadas como la seguridad mejorada con BitLocker y Windows Hello, así como la capacidad de unirse a dominios empresariales, Windows 11 Pro garantiza la protección de tus datos y la integración perfecta en entornos laborales. Su diseño moderno y elegante, junto con funciones como Snap Layouts y Snap Groups, optimizan tu productividad al organizar fácilmente tus aplicaciones y ventanas abiertas. Además, con la integración mejorada de Microsoft Teams, colabora con colegas de manera más eficiente. Eleva tu experiencia informática a un nuevo nivel con Windows 11 Pro. ¡Hazte con él hoy mismo y descubre todo su potencial!",
     "image":"images/fruits/strawberry.png",
     "largeImage":"images/fruits/strawberryB.png"
   },
   {
     "name":"water_apple",
-    "title":"Water Apple",
+    "title":"Windows 10 Home",
     "category":"fruits",
-    "price":2.25,
-    "description":"Syzygium malaccense is a species of tree belonging to the Myrtaceae family. The fruit has a scent very similar to that of a rose, with a watery texture and a slightly sweet taste.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "price":12000,
+    "description":"Descubre la versatilidad de Windows 10 Home, un sistema operativo diseñado para ofrecerte una experiencia informática intuitiva y poderosa en el hogar. Con su interfaz familiar y fácil de usar, Windows 10 Home te permite acceder rápidamente a tus aplicaciones y archivos favoritos. Disfruta de características como el asistente virtual Cortana y el navegador Microsoft Edge, que te ayudan a mantenerte organizado y productivo en tu día a día. Además, con la tienda Microsoft Store, puedes acceder a una amplia variedad de aplicaciones, juegos y contenido multimedia para satisfacer todas tus necesidades de entretenimiento. Haz de tu experiencia informática en casa algo excepcional con Windows 10 Home. ¡Consíguelo hoy mismo y lleva tu productividad y diversión al siguiente nivel!",
     "image":"images/fruits/water_apple.png",
     "largeImage":"images/fruits/water_appleB.png"
   },
   {
     "name":"papaya",
-    "title":"Papaya",
+    "title":"Office 2019",
     "category":"fruits",
-    "price":1.00,
-    "description":"The papaya is a tropical fruit with a smooth, greenish-yellow skin when unripe, turning orange when ripe. Its flesh is orange or pink, with black seeds in the center. Papayas have a sweet, musky flavor and are rich in vitamins A and C, as well as digestive enzymes. They are commonly eaten fresh, added to fruit salads, or blended into smoothies.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "price":15000,
+    "description":"Descubre la eficiencia de Office 2019, la suite de productividad líder en el mercado. Con aplicaciones como Word, Excel y PowerPoint, podrás crear documentos, hojas de cálculo y presentaciones de forma profesional y eficaz. Office 2019 ofrece herramientas avanzadas para optimizar tu flujo de trabajo, desde funciones inteligentes de análisis de datos en Excel hasta plantillas y diseños modernos en PowerPoint. Además, con nuevas características como la tinta digital en Word, podrás expresar tu creatividad de formas nunca antes vistas. Potencia tu productividad con Office 2019 y lleva tus proyectos al siguiente nivel. ¡Consigue tu copia hoy y experimenta la diferencia!",
     "image":"images/fruits/papaya.png",
     "largeImage":"images/fruits/papayaB.png"
   },
   {
     "name":"mango",
-    "title":"Mango",
+    "title":"Office 2021",
     "category":"fruits",
-    "price":1.00,
-    "description":"The mango is a tropical fruit with a smooth, thin skin that ranges in color from green to yellow to red when ripe, depending on the variety. Its flesh is juicy and sweet, with a rich, tropical flavor. Mangoes are typically eaten fresh, either sliced or cubed, and can also be used in smoothies, salads, salsas, and desserts. They are rich in vitamins A and C, as well as fiber.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+    "price":17000,
+    "description":"Explora la innovación de Office 2021, la última versión de la suite de productividad de Microsoft. Con aplicaciones como Word, Excel y PowerPoint, podrás crear documentos, hojas de cálculo y presentaciones con facilidad y profesionalismo. Office 2021 ofrece características mejoradas para optimizar tu flujo de trabajo, desde nuevas funciones de colaboración en tiempo real hasta herramientas avanzadas de análisis de datos en Excel. Además, con plantillas actualizadas y opciones de personalización, podrás dar vida a tus ideas de manera más creativa. Potencia tu productividad con Office 2021 y lleva tus proyectos al siguiente nivel. ¡Obtén tu copia hoy y descubre todo lo que puedes lograr!",
     "image":"images/fruits/mango.png",
     "largeImage":"images/fruits/mangoB.png"
   }

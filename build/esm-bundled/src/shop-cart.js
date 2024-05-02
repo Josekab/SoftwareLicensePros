@@ -49,5 +49,5 @@ import{PolymerElement,html}from"./shop-app.js";class ShopCart extends PolymerEle
         </div>
       </div>
     </div>
-    `}static get is(){return"shop-cart"}static get properties(){return{total:Number,cart:Array,visible:{type:Boolean,observer:"_visibleChanged"},_hasItems:{type:Boolean,computed:"_computeHasItem(cart.length)"}}}_formatTotal(total){return isNaN(total)?"":"$"+total.toFixed(2)}_computeHasItem(cartLength){return 0<cartLength}_getPluralizedQuantity(quantity){return quantity+" "+(1===quantity?"item":"items")}_visibleChanged(visible){if(visible){// Notify the section's title
+    `}static get is(){return"shop-cart"}static get properties(){return{total:Number,cart:Array,visible:{type:Boolean,observer:"_visibleChanged"},_hasItems:{type:Boolean,computed:"_computeHasItem(cart.length)"}}}_formatTotal(total){return isNaN(total)?"":"₡"+total.toFixed(0)}_computeHasItem(cartLength){return 0<cartLength}_getPluralizedQuantity(quantity){return quantity+" "+(1===quantity?"item":"items")}_visibleChanged(visible){if(visible){// Notify the section's title
 this.dispatchEvent(new CustomEvent("change-section",{bubbles:!0,composed:!0,detail:{title:"Your cart"}}))}}}customElements.define(ShopCart.is,ShopCart);

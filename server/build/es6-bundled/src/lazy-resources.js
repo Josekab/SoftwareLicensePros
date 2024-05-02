@@ -3599,5 +3599,5 @@ if(!this._isDown){this._rippleDown(event)}}_onBlur(event){this._rippleUp(event)}
         <paper-icon-button class="delete-button" icon="close" aria-label\$="Delete item [[entry.item.title]]" on-click="_removeItem"></paper-icon-button>
       </div>
     </div>
-    `}static get is(){return"shop-cart-item"}static get properties(){return{entry:Object}}_quantityChange(){this._setCartItem(parseInt(this.$.quantitySelect.value,10))}_setCartItem(quantity){this.dispatchEvent(new CustomEvent("set-cart-item",{bubbles:!0,composed:!0,detail:{item:this.entry.item,quantity:quantity,size:this.entry.size}}))}_formatPrice(price){return price?"$"+price.toFixed(2):""}_removeItem(){this._setCartItem(0)}}customElements.define(ShopCartItem.is,ShopCartItem);// shop-app
+    `}static get is(){return"shop-cart-item"}static get properties(){return{entry:Object}}_quantityChange(){this._setCartItem(parseInt(this.$.quantitySelect.value,10))}_setCartItem(quantity){this.dispatchEvent(new CustomEvent("set-cart-item",{bubbles:!0,composed:!0,detail:{item:this.entry.item,quantity:quantity,size:this.entry.size}}))}_formatPrice(price){return price?"₡"+price.toFixed(0):""}_removeItem(){this._setCartItem(0)}}customElements.define(ShopCartItem.is,ShopCartItem);// shop-app
 });

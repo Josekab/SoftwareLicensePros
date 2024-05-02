@@ -79,7 +79,7 @@ class ShopCart extends PolymerElement {
   }}
 
   _formatTotal(total) {
-    return isNaN(total) ? '' : '$' + total.toFixed(2);
+    return isNaN(total) ? '' : '₡' + total.toFixed(0);
   }
 
   _computeHasItem(cartLength) {

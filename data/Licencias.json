@@ -2,7 +2,7 @@
   {
     "name":"windows_10_pro",
     "title":"Windows 10 Pro",
-    "category":"fruits",
+    "category":"licencias",
     "price":13000,
     "description":"¡Experimenta la potencia de Windows 10 Pro! Diseñado para satisfacer tanto las necesidades de usuarios domésticos como empresariales, este sistema operativo ofrece una experiencia informática fluida y segura. Con características avanzadas como BitLocker y la capacidad de unirse a dominios empresariales, garantiza la protección y la integración perfecta en entornos laborales. Su interfaz intuitiva y personalizable, junto con funciones como el modo oscuro y los escritorios virtuales, se adaptan a tus preferencias individuales. Ya sea que estés trabajando desde casa o en la oficina, Windows 10 Pro te proporciona la flexibilidad y el rendimiento necesarios para alcanzar tus objetivos. ¡Hazte con Windows 10 Pro hoy mismo y lleva tu experiencia informática al siguiente nivel!",
     "image":"images/fruits/apple.png",
@@ -11,7 +11,7 @@
   {
     "name":"banana",
     "title":"Windows 11 Home",
-    "category":"fruits",
+    "category":"licencias",
     "price":15000,
     "description":"¡Descubre la innovación de Windows 11 Home! Diseñado para brindar una experiencia moderna y fluida, este sistema operativo ofrece características avanzadas para usuarios domésticos. Con su nuevo diseño centrado en la productividad y la creatividad, Windows 11 Home te ofrece una interfaz intuitiva y personalizable que se adapta a tus necesidades. Disfruta de características como Snap Layouts y Snap Groups, que facilitan la organización de tus aplicaciones y ventanas abiertas. Además, con la integración mejorada de Microsoft Teams, puedes mantenerte conectado con amigos y familiares de manera más sencilla. Con Windows 11 Home, lleva tu experiencia informática a nuevas alturas y disfruta de un rendimiento excepcional en cada tarea. ¡Hazte con Windows 11 Home hoy mismo y descubre todo lo que puede hacer por ti!",
     "image":"images/fruits/banana.png",
@@ -20,7 +20,7 @@
   {
     "name":"strawberry",
     "title":"Windows 11 Pro",
-    "category":"fruits",
+    "category":"licencias",
     "price":17000,
     "description":"¡Explora la excelencia de Windows 11 Pro! Este sistema operativo ofrece un conjunto completo de herramientas diseñadas para satisfacer las necesidades de los usuarios más exigentes, ya sean profesionales o empresas. Con características avanzadas como la seguridad mejorada con BitLocker y Windows Hello, así como la capacidad de unirse a dominios empresariales, Windows 11 Pro garantiza la protección de tus datos y la integración perfecta en entornos laborales. Su diseño moderno y elegante, junto con funciones como Snap Layouts y Snap Groups, optimizan tu productividad al organizar fácilmente tus aplicaciones y ventanas abiertas. Además, con la integración mejorada de Microsoft Teams, colabora con colegas de manera más eficiente. Eleva tu experiencia informática a un nuevo nivel con Windows 11 Pro. ¡Hazte con él hoy mismo y descubre todo su potencial!",
     "image":"images/fruits/strawberry.png",
@@ -29,7 +29,7 @@
   {
     "name":"water_apple",
     "title":"Windows 10 Home",
-    "category":"fruits",
+    "category":"licencias",
     "price":12000,
     "description":"Descubre la versatilidad de Windows 10 Home, un sistema operativo diseñado para ofrecerte una experiencia informática intuitiva y poderosa en el hogar. Con su interfaz familiar y fácil de usar, Windows 10 Home te permite acceder rápidamente a tus aplicaciones y archivos favoritos. Disfruta de características como el asistente virtual Cortana y el navegador Microsoft Edge, que te ayudan a mantenerte organizado y productivo en tu día a día. Además, con la tienda Microsoft Store, puedes acceder a una amplia variedad de aplicaciones, juegos y contenido multimedia para satisfacer todas tus necesidades de entretenimiento. Haz de tu experiencia informática en casa algo excepcional con Windows 10 Home. ¡Consíguelo hoy mismo y lleva tu productividad y diversión al siguiente nivel!",
     "image":"images/fruits/water_apple.png",
@@ -38,7 +38,7 @@
   {
     "name":"papaya",
     "title":"Office 2019",
-    "category":"fruits",
+    "category":"licencias",
     "price":15000,
     "description":"Descubre la eficiencia de Office 2019, la suite de productividad líder en el mercado. Con aplicaciones como Word, Excel y PowerPoint, podrás crear documentos, hojas de cálculo y presentaciones de forma profesional y eficaz. Office 2019 ofrece herramientas avanzadas para optimizar tu flujo de trabajo, desde funciones inteligentes de análisis de datos en Excel hasta plantillas y diseños modernos en PowerPoint. Además, con nuevas características como la tinta digital en Word, podrás expresar tu creatividad de formas nunca antes vistas. Potencia tu productividad con Office 2019 y lleva tus proyectos al siguiente nivel. ¡Consigue tu copia hoy y experimenta la diferencia!",
     "image":"images/fruits/papaya.png",
@@ -47,7 +47,7 @@
   {
     "name":"mango",
     "title":"Office 2021",
-    "category":"fruits",
+    "category":"licencias",
     "price":17000,
     "description":"Explora la innovación de Office 2021, la última versión de la suite de productividad de Microsoft. Con aplicaciones como Word, Excel y PowerPoint, podrás crear documentos, hojas de cálculo y presentaciones con facilidad y profesionalismo. Office 2021 ofrece características mejoradas para optimizar tu flujo de trabajo, desde nuevas funciones de colaboración en tiempo real hasta herramientas avanzadas de análisis de datos en Excel. Además, con plantillas actualizadas y opciones de personalización, podrás dar vida a tus ideas de manera más creativa. Potencia tu productividad con Office 2021 y lleva tus proyectos al siguiente nivel. ¡Obtén tu copia hoy y descubre todo lo que puedes lograr!",
     "image":"images/fruits/mango.png",

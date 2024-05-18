@@ -15,6 +15,7 @@ import { afterNextRender } from '@polymer/polymer/lib/utils/render-status.js';
 import { timeOut } from '@polymer/polymer/lib/utils/async.js';
 import { Debouncer } from '@polymer/polymer/lib/utils/debounce.js';
 
+
 // performance logging
 window.performance && performance.mark && performance.mark('shop-app - before register');
 
@@ -204,6 +205,41 @@ class ShopApp extends PolymerElement {
       margin-bottom: 5px;
     }
     
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .contact-info, .map-container {
+      flex: 1;
+      margin-right: 20px;
+    }
+    
+    .map-container iframe {
+      width: 100%;
+      height: 200px;
+    }
+    
+    .footer-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .footer-links a {
+      color: #4CAF50;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s ease; 
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline;
+      color: #2E8B57; /* Cambiado el color al pasar el ratón */
+    }
+    
+    
     .business-name {
       font-weight: bold;
       font-size: 1.2em;
@@ -312,14 +348,33 @@ class ShopApp extends PolymerElement {
     </iron-pages>
 
     <footer>
+  <div class="footer-container">
+    <!-- Información de contacto y ubicación -->
     <div class="contact-info">
-        <h3>Contacto</h3>
-        <p class="business-name">LicenseSoftwarePros</p>
-        <p>Dirección: 123 Calle Principal, San José, Costa Rica</p>
-        <p>Teléfono: +506 1234 5678</p>
-        <p>Correo electrónico: info@licensesoftwarepros.com</p>
+      <h3>Contacto</h3>
+      <p class="business-name">SOFTWARE LICENSE PROS</p>
+      <p>Dirección: Sede Interuniversitaria de Alajuela, Desamparados, Alajuela, Costa Rica</p>
+      <p>Teléfono: +506 1234 5678</p>
+      <p>Correo electrónico: info@licensesoftwarepros.com</p>
+      <!-- Enlaces para Acerca de y Términos y Condiciones -->
+  <div class="footer-links">
+    <a href="/shop-about">Acerca de</a>
+    <a href="/shop-terms">Términos y Condiciones</a>
+  </div>
     </div>
-  </footer>
+    
+
+    <!-- Mapa de Google Maps -->
+    <div class="map-container">
+      <h3>Puedes Ubicarnos en:</h3>
+      <!-- Aquí va el código del mapa de Google Maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.964838675715!2d-84.19958952599254!3d10.019760272696518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9e55a4f17c3%3A0x9c99069409cbf8d9!2sSede%20Interuniversitaria%20de%20Alajuela%20UCR%2FUNA%2FUNED%2FTEC!5e0!3m2!1ses-419!2scr!4v1716059639314!5m2!1ses-419!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  
+</footer>
+
 
     <!-- a11y announcer -->
     <div class="announcer" aria-live="assertive">[[_a11yLabel]]</div>
@@ -386,7 +441,16 @@ class ShopApp extends PolymerElement {
       this._listScrollTop = window.pageYOffset;
     }
 
-    this.page = page || 'home';
+    switch (page) {
+      case 'shop-about':
+        this.page = 'shop-about';
+        break;
+      case 'shop-terms':
+        this.page = 'shop-terms';
+        break;
+      default:
+        this.page = 'home';
+    }
 
     // Close the drawer - in case the *route* change came from a link in the drawer.
     this.drawerOpened = false;
@@ -407,6 +471,12 @@ class ShopApp extends PolymerElement {
           break;
         case 'checkout':
           import('./shop-checkout.js').then(cb);
+          break;
+        case 'shop-about':
+          import('./shop-about.html');
+          break;
+        case 'shop-terms':
+          import('./shop-terms.html');
           break;
         default:
           this._pageLoaded(Boolean(oldPage));

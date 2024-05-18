@@ -441,7 +441,16 @@ class ShopApp extends PolymerElement {
       this._listScrollTop = window.pageYOffset;
     }
 
-    this.page = page || 'home';
+    switch (page) {
+      case 'shop-about':
+        this.page = 'shop-about';
+        break;
+      case 'shop-terms':
+        this.page = 'shop-terms';
+        break;
+      default:
+        this.page = 'home';
+    }
 
     // Close the drawer - in case the *route* change came from a link in the drawer.
     this.drawerOpened = false;

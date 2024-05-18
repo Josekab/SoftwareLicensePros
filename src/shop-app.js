@@ -22,202 +22,197 @@ class ShopApp extends PolymerElement {
   static get template() {
     return html`
     <style>
+    :host {
+      display: block;
+      position: relative;
+      padding-top: 130px;
+      padding-bottom: 64px;
+      min-height: 100vh;
+      box-sizing: border-box;
+      --app-primary-color: #202020;
+      --app-secondary-color: #757575;
+      --app-accent-color: #172C50;
+      --paper-button-ink-color: var(--app-accent-color);
+      --paper-icon-button-ink-color: var(--app-accent-color);
+      --paper-spinner-color: var(--app-accent-color);
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      color: var(--app-primary-color);
+      padding-bottom: 10px; /* Extra padding to accommodate the footer */
+    }
 
-      :host {
-        display: block;
-        position: relative;
-        padding-top: 130px;
-        padding-bottom: 64px;
-        min-height: 100vh;
-        --app-primary-color: #202020;
-        --app-secondary-color: #757575;
-        --app-accent-color: #172C50;
-        --paper-button-ink-color: var(--app-accent-color);
-        --paper-icon-button-ink-color: var(--app-accent-color);
-        --paper-spinner-color: var(--app-accent-color);
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        color: var(--app-primary-color);
-      }
+    app-header {
+      @apply --layout-fixed-top;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.95);
+      --app-header-shadow: {
+        box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
+        height: 10px;
+        bottom: -10px;
+      };
+    }
 
-      app-header {
-        @apply --layout-fixed-top;
-        z-index: 1;
-        background-color: rgba(255, 255, 255, 0.95);
-        --app-header-shadow: {
-          box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
-          height: 10px;
-          bottom: -10px;
-        };
-      }
+    paper-icon-button {
+      color: var(--app-primary-color);
+    }
 
-      paper-icon-button {
-        color: var(--app-primary-color);
-      }
+    .logo {
+      text-align: center;
+    }
 
-      .logo {
-        text-align: center;
-      }
+    .logo a {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      color: var(--app-primary-color);
+      text-decoration: none;
+      /* required for IE 11, so this <a> can receive pointer events */
+      display: inline-block;
+      pointer-events: auto;
+    }
 
-      .logo a {
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 0.3em;
-        color: var(--app-primary-color);
-        text-decoration: none;
-        /* required for IE 11, so this <a> can receive pointer events */
-        display: inline-block;
-        pointer-events: auto;
-      }
+    .left-bar-item {
+      width: 40px;
+    }
 
-      .left-bar-item {
-        width: 40px;
-      }
+    .menu-btn {
+      display: none;
+    }
 
-      .menu-btn {
-        display: none;
-      }
+    .cart-btn-container {
+      position: relative;
+      width: 40px;
+    }
 
-      .cart-btn-container {
-        position: relative;
-        width: 40px;
-      }
+    .announcer {
+      position: fixed;
+      height: 0;
+      overflow: hidden;
+    }
 
-      .announcer {
-        position: fixed;
-        height: 0;
-        overflow: hidden;
-      }
+    :host(:not([page=detail])) .back-btn {
+      display: none;
+    }
 
-      :host(:not([page=detail])) .back-btn {
-        display: none;
-      }
+    [hidden] {
+      display: none !important;
+    }
 
-      [hidden] {
-        display: none !important;
-      }
+    #tabContainer {
+      position: relative;
+      height: 66px;
+    }
 
-      #tabContainer {
-        position: relative;
-        height: 66px;
-      }
+    shop-tabs, shop-tab {
+      --shop-tab-overlay: {
+        border-bottom: 2px solid var(--app-accent-color);
+      };
+    }
 
-      shop-tabs, shop-tab {
-        --shop-tab-overlay: {
-          border-bottom: 2px solid var(--app-accent-color);
-        };
-      }
+    shop-tabs {
+      height: 100%;
+    }
 
-      shop-tabs {
-        height: 100%;
-      }
+    shop-tab {
+      margin: 0 10px;
+    }
 
-      shop-tab {
-        margin: 0 10px;
-      }
+    shop-tab a {
+      display: inline-block;
+      outline: none;
+      padding: 9px 5px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--app-primary-color);
+    }
 
-      shop-tab a {
-        display: inline-block;
-        outline: none;
-        padding: 9px 5px;
-        font-size: 13px;
-        font-weight: 500;
-        text-decoration: none;
-        color: var(--app-primary-color);
-      }
+    .cart-badge {
+      position: absolute;
+      top: -2px;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      background-color: var(--app-accent-color);
+      border-radius: 50%;
+      color: white;
+      font-size: 12px;
+      font-weight: 500;
+      pointer-events: none;
+      @apply --layout-vertical;
+      @apply --layout-center-center;
+    }
 
-      .cart-badge {
-        position: absolute;
-        top: -2px;
-        right: 0;
-        width: 20px;
-        height: 20px;
-        background-color: var(--app-accent-color);
-        border-radius: 50%;
-        color: white;
-        font-size: 12px;
-        font-weight: 500;
-        pointer-events: none;
-        @apply --layout-vertical;
-        @apply --layout-center-center;
-      }
+    .drawer-list {
+      margin: 0 20px;
+    }
 
-      .drawer-list {
-        margin: 0 20px;
-      }
+    .drawer-list a {
+      display: block;
+      padding: 0 16px;
+      line-height: 40px;
+      text-decoration: none;
+      color: var(--app-secondary-color);
+    }
 
-      .drawer-list a {
-        display: block;
-        padding: 0 16px;
-        line-height: 40px;
-        text-decoration: none;
-        color: var(--app-secondary-color);
-      }
+    .drawer-list a.iron-selected {
+      color: black;
+      font-weight: bold;
+    }
 
-      .drawer-list a.iron-selected {
-        color: black;
-        font-weight: bold;
-      }
+    shop-cart-modal {
+      z-index: 2;
+    }
 
-      shop-cart-modal {
-        z-index: 2;
-      }
+    app-drawer {
+      z-index: 3;
+    }
 
-      app-drawer {
-        z-index: 3;
-      }
+    iron-pages {
+      max-width: 1440px;
+      margin: 0 auto;
+      min-height: calc(100vh - 194px); /* Adjusted height to ensure footer is visible */
+      box-sizing: border-box;
+    }
 
-      iron-pages {
-        max-width: 1440px;
-        margin: 0 auto;
-      }
-
-      footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        text-align: center;
-        margin-top: 20px;
-        line-height: 24px;
-      }
-
-      footer > a {
-        color: var(--app-secondary-color);
-        text-decoration: none;
-      }
-
-      footer > a:hover {
-        text-decoration: underline;
-      }
-
-      .demo-label {
-        box-sizing: border-box;
-        width: 120px;
-        padding: 6px;
-        margin: 8px auto 0;
-        background-color: var(--app-primary-color);
-        color: white;
-        text-transform: uppercase;
-      }
-
-      /* small screen */
-      @media (max-width: 767px) {
-        :host {
-          padding-top: 64px;
-        }
-
-        .menu-btn {
-          display: block;
-        }
-
-        :host([page=detail]) .menu-btn {
-          display: none;
-        }
-      }
-
-      .logo-site {
-        padding-top: 16px;
-      }
+    footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      line-height: 24px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .contact-info {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .contact-info h3 {
+      color: #ccc; /* Color del título del contacto */
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    
+    .contact-info p {
+      color: #ddd; /* Color del texto del contacto */
+      font-size: 1em;
+      margin-bottom: 5px;
+    }
+    
+    .business-name {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #ccc; /* Color del nombre del negocio */
+    }
+    
+    .logo-site {
+      padding-top: 16px;
+    }
     </style>
 
     <shop-analytics key="UA-39334307-16"></shop-analytics>
@@ -317,9 +312,14 @@ class ShopApp extends PolymerElement {
     </iron-pages>
 
     <footer>
-      <a href="#">Costa Rica</a>
-      <div class="demo-label">SOFTWARE LICENSE PROS</div>
-    </footer>
+    <div class="contact-info">
+        <h3>Contacto</h3>
+        <p class="business-name">LicenseSoftwarePros</p>
+        <p>Dirección: 123 Calle Principal, San José, Costa Rica</p>
+        <p>Teléfono: +506 1234 5678</p>
+        <p>Correo electrónico: info@licensesoftwarepros.com</p>
+    </div>
+  </footer>
 
     <!-- a11y announcer -->
     <div class="announcer" aria-live="assertive">[[_a11yLabel]]</div>

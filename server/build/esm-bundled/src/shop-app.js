@@ -8119,8 +8119,8 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
     </iron-pages>
 
     <footer>
-      <a href="#">Costa Rica</a>
-      <div class="demo-label">SOFTWARE LICENSE PROS</div>
+      <a href="#">Costa Rica4</a>
+      <div class="demo-label">SOFTWARE LICENSE PROS4</div>
     </footer>
 
     <!-- a11y announcer -->

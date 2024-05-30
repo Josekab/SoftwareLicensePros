@@ -115,12 +115,12 @@ class ShopCheckout extends PolymerElement {
             <form method="post" action="data/sample_success_response.json" enctype="application/x-www-form-urlencoded">
 
               <div class="subsection" visible$="[[!_hasItems]]">
-                <p class="empty-cart">Your <iron-icon icon="shopping-cart"></iron-icon> is empty.</p>
+                <p class="empty-cart">Tu <iron-icon icon="shopping-cart"></iron-icon> esta vacio.</p>
               </div>
 
               <header class="subsection" visible$="[[_hasItems]]">
                 <h1>Checkout</h1>
-                <span>Shop is a demo app - form data will not be sent</span>
+                
               </header>
 
               <div class="subsection grid" visible$="[[_hasItems]]">
@@ -139,7 +139,7 @@ class ShopCheckout extends PolymerElement {
                   </div>
                   <div class="row input-row">
                     <shop-input>
-                      <input type="tel" id="accountPhone" name="accountPhone" pattern="\\d{10,}"
+                      <input type="tel" id="accountPhone" name="accountPhone" pattern="\\d{8,}"
                           placeholder="Phone Number" required
                           aria-labelledby="accountPhoneLabel accountInfoHeading">
                       <shop-md-decorator error-message="Invalid Phone Number" aria-hidden="true">
@@ -196,8 +196,8 @@ class ShopCheckout extends PolymerElement {
                     <shop-select>
                       <select id="shipCountry" name="shipCountry" required
                           aria-labelledby="shipCountryLabel shipAddressHeading">
-                        <option value="US" selected>United States</option>
-                        <option value="CA">Canada</option>
+                        
+                        <option value="CA">Costa rica</option>
                       </select>
                       <shop-md-decorator aria-hidden="true">
                         <shop-underline></shop-underline>
@@ -266,8 +266,8 @@ class ShopCheckout extends PolymerElement {
                         <select id="billCountry" name="billCountry" required$="[[hasBillingAddress]]"
                             autocomplete="billing country"
                             aria-labelledby="billCountryLabel billAddressHeading">
-                          <option value="US" selected>United States</option>
-                          <option value="CA">Canada</option>
+                          
+                          <option value="CA">Costa rica</option>
                         </select>
                         <shop-md-decorator aria-hidden="true">
                           <shop-underline></shop-underline>
@@ -328,17 +328,17 @@ class ShopCheckout extends PolymerElement {
                     <shop-select>
                       <select id="ccExpYear" name="ccExpYear" required
                           autocomplete="cc-exp-year" aria-label="Expiry year">
-                        <option value="2016" selected>2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
+                        <option value="2024" selected>2024</option>
                         <option value="2025">2025</option>
                         <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                        <option value="2034">2034</option>
+                        <option value="2035">2035</option>
                       </select>
                       <shop-md-decorator aria-hidden="true">
                         <shop-underline></shop-underline>
@@ -378,7 +378,7 @@ class ShopCheckout extends PolymerElement {
 
         <!-- Success message UI -->
         <header state="success">
-          <h1>Thank you</h1>
+          <h1>Gracias!</h1>
           <p>[[response.successMessage]]</p>
           <shop-button responsive>
             <a href="/">Finish</a>
@@ -501,7 +501,7 @@ class ShopCheckout extends PolymerElement {
             composed: true, detail: {
               response: {
                 success: 1,
-                successMessage: 'Demo checkout process complete.'
+                successMessage: 'Proceso de compra exitoso!',
               }
             }}));
         });

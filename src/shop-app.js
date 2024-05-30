@@ -14,6 +14,8 @@ import './shop-home.js';
 import { afterNextRender } from '@polymer/polymer/lib/utils/render-status.js';
 import { timeOut } from '@polymer/polymer/lib/utils/async.js';
 import { Debouncer } from '@polymer/polymer/lib/utils/debounce.js';
+import './shop-about.js'; // Importa el nuevo componente
+import './shop-terms.js'; // Importa el nuevo componente
 
 // performance logging
 window.performance && performance.mark && performance.mark('shop-app - before register');
@@ -318,7 +320,7 @@ class ShopApp extends PolymerElement {
         <p>Dirección: 123 Calle Principal, San José, Costa Rica</p>
         <p>Teléfono: +506 1234 5678</p>
         <p>Correo electrónico: info@licensesoftwarepros.com</p>
-    </div>
+        <p><a href="/acerca" target="_blank">Acerca de</a> | <a href="/terminos" target="_blank">Términos y Condiciones</a></p></div>
   </footer>
 
     <!-- a11y announcer -->
@@ -472,11 +474,11 @@ class ShopApp extends PolymerElement {
   }
 
   // Elements in the app can notify section changes.
-  // Response by a11y announcing the section and syncronizing the category.
+  // Response by a11y announcing the section and synchronizing the category.
   _onChangeSection(event) {
     let detail = event.detail;
 
-    // Scroll to the top of the page when navigating to a non-list page. For list view,
+    // Scroll to the top of the page when navigating to a non-list page. For the list view,
     // scroll to the last saved position only if the category has not changed.
     let scrollTop = 0;
     if (this.page === 'list') {

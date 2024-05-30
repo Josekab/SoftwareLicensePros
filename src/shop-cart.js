@@ -34,7 +34,7 @@ class ShopCart extends PolymerElement {
 
     <div class="main-frame">
       <div class="subsection" visible$="[[!_hasItems]]">
-        <p class="empty-cart">Your <iron-icon icon="shopping-cart"></iron-icon> is empty.</p>
+        <p class="empty-cart">Tu <iron-icon icon="shopping-cart"></iron-icon> esta vacio.</p>
       </div>
       <div class="subsection" visible$="[[_hasItems]]">
         <header>

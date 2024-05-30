@@ -28,9 +28,7 @@ class Shop404Warning extends PolymerElement {
     </style>
 
     <div>
-      <iron-icon icon="error"></iron-icon>
-      <h1>Sorry, we couldn't find that page</h1>
-    </div>
+      </div>
     <shop-button>
       <a href="/">Go to the home page</a>
     </shop-button>

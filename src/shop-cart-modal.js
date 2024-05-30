@@ -80,7 +80,7 @@ class ShopCartModal extends mixinBehaviors(
     </style>
 
     <div class="layout-horizontal">
-      <div class="label">Added to cart</div>
+      <div class="label">Agregado al carrito</div>
     </div>
     <div class="layout-horizontal">
       <shop-button class="modal-button">

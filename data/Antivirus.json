@@ -4,7 +4,7 @@
     "title":"Kapersky total security",
     "category":"Antivirus",
     "price":20000,
-    "description":"Protege tu sistema y maximiza la productividad con Avast Pro Antivirus 2022. Esta poderosa suite ofrece una defensa avanzada contra amenazas en línea, manteniendo tus datos y dispositivos seguros en todo momento. Con características como protección en tiempo real, firewall integrado y actualizaciones automáticas, puedes navegar por internet con tranquilidad y concentrarte en tus tareas sin preocupaciones. ¡Obtén Avast Pro Antivirus 2022 ahora y disfruta de una experiencia informática sin complicaciones!",
+    "description":"Protege tu sistema y maximiza la productividad con Kaspersky Total Security. Esta poderosa suite ofrece una defensa avanzada contra amenazas en línea, manteniendo tus datos y dispositivos seguros en todo momento. Con características como protección en tiempo real, firewall integrado, control parental y herramientas de privacidad, puedes navegar por internet con tranquilidad y concentrarte en tus tareas sin preocupaciones. ¡Obtén Kaspersky Total Security ahora y disfruta de una experiencia informática sin complicaciones!",
     "image":"data/images/10-15068B.jpg",
     "largeImage":"data/images/10-15068A.jpg"
   },
@@ -13,7 +13,7 @@
     "title":"ESET NOD32",
     "category":"Antivirus",
     "price":13000,
-    "description":"Obtén protección confiable para tu sistema con AVG Antivirus. Con su tecnología avanzada, AVG ofrece una defensa robusta contra virus, malware y otras amenazas en línea. Disfruta de características como escaneo en tiempo real, protección de navegación y actualizaciones automáticas para garantizar la seguridad constante de tu dispositivo. Con AVG Antivirus, puedes navegar por internet con confianza y mantener tus datos protegidos en todo momento. ¡Hazte con AVG Antivirus y mantén tu sistema seguro hoy mismo!",
+    "description":"Obtén protección confiable para tu sistema con ESET NOD32 Antivirus. Con su tecnología avanzada, ESET NOD32 ofrece una defensa robusta contra virus, malware y otras amenazas en línea. Disfruta de características como escaneo en tiempo real, protección antiphishing y actualizaciones automáticas para garantizar la seguridad constante de tu dispositivo. Con ESET NOD32 Antivirus, puedes navegar por internet con confianza y mantener tus datos protegidos en todo momento. ¡Hazte con ESET NOD32 Antivirus y mantén tu sistema seguro hoy mismo!",
     "image":"data/images/10-14154B.jpg",
     "largeImage":"data/images/10-14154A.jpg"
   },

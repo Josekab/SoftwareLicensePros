@@ -178,7 +178,7 @@ class ShopApp extends PolymerElement {
     }
 
     footer {
-      position: relative;
+      position: relative; /* Asegúrate de que el footer tenga position: relative; */
       bottom: 0;
       left: 0;
       right: 0;
@@ -191,9 +191,13 @@ class ShopApp extends PolymerElement {
     }
     
     .contact-info {
+      position: absolute; /* Añade esto */
+      left: 50%; /* Añade esto */
+      transform: translate(-50%, 0); /* Añade esto */
       max-width: 400px;
       margin: 0 auto;
     }
+    
     
     .contact-info h3 {
       color: #ccc; /* Color del título del contacto */
@@ -207,10 +211,9 @@ class ShopApp extends PolymerElement {
       margin-bottom: 5px;
     }
     
-    
     .footer-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around; /* Cambiado de space-between a space-around */
       align-items: flex-start;
     }
     
@@ -219,11 +222,31 @@ class ShopApp extends PolymerElement {
       margin-right: 20px;
     }
     
+    .map-container {
+      position: relative;
+      left: 25%; /* Desplaza el mapa a la derecha */
+    }
     .map-container iframe {
-      width: 100%;
+      width: 20%;
       height: 200px;
     }
+    @media (max-width: 768px) {
+      .contact-info {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+      }
     
+      .map-container {
+        position: static;
+        left: auto;
+        margin-top: 20px;
+      }
+      
+      .map-container iframe {
+        height: 150px; /* Ajusta el alto del mapa */
+      }
+    }
     .footer-links {
       text-align: center;
       margin-top: 20px;

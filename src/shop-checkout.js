@@ -505,6 +505,42 @@ class ShopCheckout extends PolymerElement {
               }
             }}));
         });
+        var email_save = this.$.checkoutForm.querySelector('#accountEmail');
+        var email_value = email_save.value;
+
+        var price_save = this.$.checkoutForm.querySelector('.row.total-row');
+        var price_value = price_save.children[1];
+        var price_value_int = parseInt(price_value.textContent.trim().replace('₡', ''), 10);
+
+        const fs = require('fs');
+
+        // Rutas de archivos
+        const filePath = 'stats.csv';
+
+        // Datos a agregar
+        const email = email_value; // Suponiendo que email_value ya está definido
+        const price = price_value_int; // Suponiendo que price_value_int ya está definido
+
+        // Leer el archivo CSV existente
+        fs.readFile(filePath, 'utf8', (err, data) => {
+          if (err) {
+            console.error('Error al leer el archivo:', err);
+            return;
+          }
+
+          // Agregar nueva línea al final del archivo
+          const newData = `${data.trim()}\n${email},${price}`;
+
+          // Escribir los datos actualizados de vuelta al archivo
+          fs.writeFile(filePath, newData, 'utf8', (err) => {
+            if (err) {
+              console.error('Error al escribir en el archivo:', err);
+              return;
+            }
+            console.log('Datos agregados con éxito al archivo.');
+          });
+        });
+
 
       // this.$.checkoutForm.submit();
     }

@@ -175,10 +175,10 @@ class ShopApp extends PolymerElement {
       margin: 0 auto;
       min-height: calc(100vh - 194px); /* Adjusted height to ensure footer is visible */
       box-sizing: border-box;
-    }
-
-    footer {
-      position: relative; /* Asegúrate de que el footer tenga position: relative; */
+  }
+  
+  footer {
+      position: relative;
       bottom: 0;
       left: 0;
       right: 0;
@@ -188,81 +188,113 @@ class ShopApp extends PolymerElement {
       color: white;
       padding: 20px;
       border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    .contact-info {
-      position: absolute; /* Añade esto */
-      left: 50%; /* Añade esto */
-      transform: translate(-50%, 0); /* Añade esto */
+  }
+  
+  .footer-container {
+      display: flex;
+      justify-content: center; /* Centers the entire container */
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px; /* Space between elements */
+  }
+  
+  .social-icons-container,
+  .footer-menu-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+  }
+  
+  .social-icon {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      border: 1px solid #f2f2f2;
+      background-position: center;
+      background-size: 40%;
+      background-repeat: no-repeat;
+      margin: 1rem;
+  }
+  
+  .social-icon:hover {
+      background-color: #121212;
+      filter: invert(1);
+  }
+  
+  .social-icon:nth-of-type(1) {
+      background-image: url(../images/faceblanco.png);
+  }
+  
+  .social-icon:nth-of-type(2) {
+      background-image: url(../images/twitterblanco.png);
+  }
+  
+  .social-icon:nth-of-type(3) {
+      background-image: url(../images/instablanco.png);
+  }
+  
+  .contact-info {
       max-width: 400px;
-      margin: 0 auto;
-    }
-    
-    
-    .contact-info h3 {
-      color: #ccc; /* Color del título del contacto */
+      margin: 0 20px; /* Add margin to both sides for spacing */
+      text-align: center;
+  }
+  
+  .contact-info h3 {
+      color: #ccc;
       font-size: 1.5em;
       margin-bottom: 10px;
-    }
-    
-    .contact-info p {
-      color: #ddd; /* Color del texto del contacto */
+  }
+  
+  .contact-info p {
+      color: #ddd;
       font-size: 1em;
       margin-bottom: 5px;
-    }
-    
-    .footer-container {
-      display: flex;
-      justify-content: space-around; /* Cambiado de space-between a space-around */
-      align-items: flex-start;
-    }
-    
-    .contact-info, .map-container {
-      flex: 1;
-      margin-right: 20px;
-    }
-    
-    .map-container {
-      position: relative;
-      left: 25%; /* Desplaza el mapa a la derecha */
-    }
-    .map-container iframe {
-      width: 20%;
+  }
+  
+  .map-container {
+      max-width: 400px;
+      margin: 0 20px; /* Add margin to both sides for spacing */
+      text-align: center;
+  }
+  
+  .map-container iframe {
+      width: 100%;
       height: 200px;
-    }
-    @media (max-width: 768px) {
-      .contact-info {
-        position: static;
-        transform: none;
-        margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+      .footer-container {
+          flex-direction: column;
       }
-    
-      .map-container {
-        position: static;
-        left: auto;
-        margin-top: 20px;
+  
+      .contact-info, .map-container {
+          margin: 20px 0;
       }
-      
+  
       .map-container iframe {
-        height: 150px; /* Ajusta el alto del mapa */
+          height: 150px;
       }
-    }
-    .footer-links {
+  }
+  
+  .footer-links {
       text-align: center;
       margin-top: 20px;
-    }
-    
-    .footer-links a {
+  }
+  
+  .footer-links a {
       color: #4CAF50;
       margin: 0 10px;
       text-decoration: none;
-      transition: color 0.3s ease; 
-    }
-    
-    .footer-links a:hover {
+      transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
       text-decoration: underline;
-      color: #2E8B57; /* Cambiado el color al pasar el ratón */
-    }
+      color: #2E8B57;
+  }
+  
     
     
     .business-name {
@@ -374,18 +406,27 @@ class ShopApp extends PolymerElement {
 
     <footer>
   <div class="footer-container">
-    <!-- Información de contacto y ubicación -->
+    
+    <div class="social-icons-container">
+        <a target=_blank href="" class="social-icon"></a>
+        <a target=_blank href="" class="social-icon"></a>
+        <a target=_blank href="" class="social-icon"></a>
+    </div>
+
+  <!-- Información de contacto y ubicación -->
     <div class="contact-info">
       <h3>Contacto</h3>
       <p class="business-name">SOFTWARE LICENSE PROS</p>
       <p>Dirección: Sede Interuniversitaria de Alajuela, Desamparados, Alajuela, Costa Rica</p>
       <p>Teléfono: +506 1234 5678</p>
       <p>Correo electrónico: info@licensesoftwarepros.com</p>
+      
       <!-- Enlaces para Acerca de y Términos y Condiciones -->
-  <div class="footer-links">
-    <a href="/shop-about">Acerca de</a>
-    <a href="/shop-terms">Términos y Condiciones</a>
-  </div>
+      <div class="footer-links">
+        <a href="src/shop-about.html" target="_blank">Acerca de</a>
+        <a href="src/shop-terms.html" target="_blank">Términos y Condiciones</a>
+      </div>
+  
     </div>
     
 
@@ -489,10 +530,10 @@ class ShopApp extends PolymerElement {
           import('./shop-checkout.js').then(cb);
           break;
         case 'shop-about':
-          import('./shop-about.html');
+          import('./shop-about.html').then(cb);
           break;
         case 'shop-terms':
-          import('./shop-terms.html');
+          import('./shop-terms.html').then(cb);
           break;
         default:
           this._pageLoaded(Boolean(oldPage));

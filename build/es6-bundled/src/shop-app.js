@@ -8203,8 +8203,7 @@ this._fetchItems(this._getCategoryObject(this.categoryName),3)}}}customElements.
       <shop-cart name="cart" cart="[[cart]]" total="[[total]]"></shop-cart>
       <!-- checkout view -->
       <shop-checkout name="checkout" cart="[[cart]]" total="[[total]]" route="{{subroute}}"></shop-checkout>
-      <shop-about name="acerca"></shop-about>
-      <shop-terms name="terminos"></shop-terms>
+      
       <shop-404-warning name="404"></shop-404-warning>
     </iron-pages>
 

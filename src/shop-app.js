@@ -420,11 +420,12 @@ class ShopApp extends PolymerElement {
       <p>Dirección: Sede Interuniversitaria de Alajuela, Desamparados, Alajuela, Costa Rica</p>
       <p>Teléfono: +506 1234 5678</p>
       <p>Correo electrónico: info@licensesoftwarepros.com</p>
-      
+
       <!-- Enlaces para Acerca de y Términos y Condiciones -->
       <div class="footer-links">
         <a href="src/shop-about.html" target="_blank">Acerca de</a>
         <a href="src/shop-terms.html" target="_blank">Términos y Condiciones</a>
+        <a href="src/shop-preguntas.html" target="_blank">Preguntas Frecuentes</a>
       </div>
   
     </div>

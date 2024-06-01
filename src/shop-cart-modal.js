@@ -84,10 +84,10 @@ class ShopCartModal extends mixinBehaviors(
     </div>
     <div class="layout-horizontal">
       <shop-button class="modal-button">
-        <a href="/cart" on-click="close" id="viewCartAnchor">View Cart</a>
+        <a href="/cart" on-click="close" id="viewCartAnchor">Carrito</a>
       </shop-button>
       <shop-button class="modal-button">
-        <a href="/checkout" on-click="close">Checkout</a>
+        <a href="/checkout" on-click="close">Pagar</a>
       </shop-button>
     </div>
 
